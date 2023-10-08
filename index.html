@@ -23,7 +23,9 @@
           <a class="logo" href="./index.html"
             >Web<span class="end-of-logo">Studio</span></a
           >
-
+          <svg class="solid-menu" width="24" height="24">
+            <use href="./images/icons.svg#icon-heroicons-solid_menu"></use>
+          </svg>
           <ul class="nav-list">
             <li class="nav-item">
               <a class="nav-link nav-link-first" href="./index.html">Studio</a>
@@ -123,6 +125,7 @@
           <ul class="list-team">
             <li class="item-team">
               <img
+                srcset="./images/img.jpg 1x, ./images/img@2x.jpg 2x"
                 src="./images/img.jpg"
                 alt="Product Designer"
                 width="264"
@@ -166,6 +169,7 @@
 
             <li class="item-team">
               <img
+                srcset="./images/img-2.jpg 1x, ./images/img-2@2x.jpg 2x"
                 src="./images/img-2.jpg"
                 alt="Frontend Developer"
                 width="264"
@@ -209,6 +213,7 @@
 
             <li class="item-team">
               <img
+                srcset="./images/img-3.jpg 1x, ./images/img-3@2x.jpg 2x"
                 src="./images/img-3.jpg"
                 alt="Marketing"
                 width="264"
@@ -252,6 +257,7 @@
 
             <li class="item-team">
               <img
+                srcset="./images/img-4.jpg 1x, ./images/img-4@2x.jpg 2x"
                 src="./images/img-4.jpg"
                 alt="UI Designer"
                 width="264"
@@ -303,6 +309,7 @@
             <li class="item-portfolio">
               <div class="section-with-overlay">
                 <img
+                  srcset="./images/img-5.jpg 1x, ./images/img-5@2x.jpg 2x"
                   src="./images/img-5.jpg"
                   alt="Banking program"
                   width="360"
@@ -322,6 +329,7 @@
             <li class="item-portfolio">
               <div class="section-with-overlay">
                 <img
+                  srcset="./images/img-6.jpg 1x, ./images/img-6@2x.jpg 2x"
                   src="./images/img-6.jpg"
                   alt="Phone"
                   width="360"
@@ -341,6 +349,7 @@
             <li class="item-portfolio">
               <div class="section-with-overlay">
                 <img
+                  srcset="./images/img-7.jpg 1x, ./images/img-7@2x.jpg 2x"
                   src="./images/img-7.jpg"
                   alt="Notebook"
                   width="360"
@@ -360,6 +369,7 @@
             <li class="item-portfolio">
               <div class="section-with-overlay">
                 <img
+                  srcset="./images/img-8.jpg 1x, ./images/img-8@2x.jpg 2x"
                   src="./images/img-8.jpg"
                   alt="Car"
                   width="360"
@@ -379,6 +389,7 @@
             <li class="item-portfolio">
               <div class="section-with-overlay">
                 <img
+                  srcset="./images/img-9.jpg 1x, ./images/img-9@2x.jpg 2x"
                   src="./images/img-9.jpg"
                   alt="Phone screen"
                   width="360"
@@ -398,6 +409,7 @@
             <li class="item-portfolio">
               <div class="section-with-overlay">
                 <img
+                  srcset="./images/img-10.jpg 1x, ./images/img-10@2x.jpg 2x"
                   src="./images/img-10.jpg"
                   alt="Girl"
                   width="360"
@@ -501,7 +513,7 @@
       </div>
     </footer>
 
-    <div class="backdrop is-open">
+    <div class="backdrop">
       <div class="modal">
         <button class="close-button" type="button">
           <svg class="close-icon" width="8" height="8">
@@ -563,15 +575,95 @@
               <span class="checkbox-mark">
                 <svg class="form-icon-checkbox" width="10" height="8">
                   <use href="./images/icons.svg#icon-Vector1"></use>
-                </svg>
-              </span>
-              I accept the terms and conditions of the
+                </svg> </span
+              >I accept the terms and conditions of the
               <a class="modal-link" href="">Privacy Policy</a>
             </label>
           </div>
 
           <button class="modal-button" type="submit">Send</button>
         </form>
+      </div>
+    </div>
+
+    <div class="menu">
+      <button class="close-button" type="button">
+        <svg class="close-icon" width="8" height="8">
+          <use href="./images/icons.svg#icon-close-black"></use>
+        </svg>
+      </button>
+      <nav class="menu-nav">
+        <ul class="menu-list">
+          <li class="menu-item">
+            <a class="menu-link menu-link-first" href="./index.html">Studio</a>
+          </li>
+          <li class="menu-item">
+            <a class="menu-link" href="">Portfolio</a>
+          </li>
+          <li class="menu-item"><a class="menu-link" href="">Contacts</a></li>
+        </ul>
+      </nav>
+      <address class="menu-contact-block">
+        <ul class="menu-contact-menu">
+          <li>
+            <a class="menu-contact-information" href="tel:+110001111111"
+              >+11 (000) 111-11-11</a
+            >
+          </li>
+          <li>
+            <a class="menu-contact-information" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+      </address>
+      <div class="tagline-social-media">
+        <ul class="tagline-socials-list menu-socials-list">
+          <li class="tagline-socials-item">
+            <a class="tagline-socials-link" href=""
+              ><svg
+                class="icon-socials tagline-icon-socials"
+                width="24"
+                height="24"
+              >
+                <use href="./images/icons.svg#icon-instagram-2"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="tagline-socials-item">
+            <a class="tagline-socials-link" href=""
+              ><svg
+                class="icon-socials tagline-icon-socials"
+                width="24"
+                height="24"
+              >
+                <use href="./images/icons.svg#icon-twitter-1"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="tagline-socials-item">
+            <a class="tagline-socials-link" href=""
+              ><svg
+                class="icon-socials tagline-icon-socials"
+                width="24"
+                height="24"
+              >
+                <use href="./images/icons.svg#icon-facebook-1"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="tagline-socials-item">
+            <a class="tagline-socials-link" href=""
+              ><svg
+                class="icon-socials tagline-icon-socials"
+                width="24"
+                height="24"
+              >
+                <use href="./images/icons.svg#icon-linkedin-1"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
   </body>
