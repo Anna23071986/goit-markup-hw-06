@@ -66,22 +66,9 @@ header .container {
   margin-right: auto;
 }
 
-@media (max-width: 767px) {
-  .page-nav {
-    padding: 16px 0;
-  }
-}
-
 .nav-list {
   display: flex;
   gap: 40px;
-}
-
-@media (max-width: 767px) {
-  .nav-list {
-    visibility: hidden;
-    position: absolute;
-  }
 }
 
 .nav-link {
@@ -119,13 +106,6 @@ header .container {
   font-style: normal;
   align-items: center;
   display: flex;
-}
-
-@media (max-width: 767px) {
-  .contact-block {
-    visibility: hidden;
-    position: absolute;
-  }
 }
 
 .contact-menu {
@@ -182,12 +162,6 @@ header .container {
   font-size: 36px;
   line-height: 1.11;
   max-width: 288px;
-}
-
-@media (max-width: 767px) {
-  .main-title {
-    padding: 0 40px;
-  }
 }
 
 .service {
@@ -252,16 +226,6 @@ header .container {
   gap: 72px;
 }
 
-@media (max-width: 1157px) {
-  .about-us-list {
-    flex-wrap: wrap;
-  }
-  .icon-container {
-    position: absolute;
-    visibility: hidden;
-  }
-}
-
 .title {
   letter-spacing: 0.02em;
   color: #2e2f42;
@@ -269,12 +233,6 @@ header .container {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
-}
-
-@media (max-width: 767px) {
-  .title {
-    text-align: center;
-  }
 }
 
 .title-text {
@@ -303,10 +261,7 @@ header .container {
 
 .list-team {
   display: flex;
-  flex-wrap: wrap;
   gap: 72px;
-  justify-content: center;
-  align-items: center;
 }
 
 .item-team {
@@ -461,21 +416,8 @@ header .container {
   padding: 96px 0;
 }
 
-@media (max-width: 767px) {
-  .tagline {
-    text-align: center;
-  }
-}
-
 .tagline-container {
   display: flex;
-}
-
-@media (max-width: 1157px) {
-  .tagline-container {
-    flex-wrap: wrap;
-    gap: 72px;
-  }
 }
 
 .tagline-logo {
@@ -492,7 +434,6 @@ header .container {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  text-align: left;
 }
 
 .tagline-social-media {
@@ -522,7 +463,6 @@ header .container {
   display: flex;
   width: 100%;
   height: 100%;
-  display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 50%;
@@ -553,13 +493,6 @@ header .container {
   gap: 16px;
 }
 
-@media (max-width: 1157px) {
-  .subscribe-form {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-}
-
 .tagline-input {
   height: 40px;
   border: 1px solid #ffffff;
@@ -574,12 +507,6 @@ header .container {
   width: 288px;
 }
 
-@media (max-width: 1157px) {
-  .tagline-input {
-    opacity: 0.3;
-  }
-}
-
 .tagline-input::placeholder {
   color: #ffffff;
 }
@@ -592,7 +519,7 @@ header .container {
   letter-spacing: 0.04em;
   line-height: 1.5;
   cursor: pointer;
-  font-family: "Roboto" sans-serif;
+  font-family: "Roboto", sans-serif;
   align-items: center;
   justify-content: center;
   display: flex;
@@ -777,13 +704,6 @@ header .container {
   margin-right: 8px;
 }
 
-@media (max-width: 767px) {
-  .checkbox-mark {
-    position: relative;
-    top: 8px;
-  }
-}
-
 input[type="checkbox"]:checked + label > span {
   background-color: #404bbf;
   border: none;
@@ -794,12 +714,6 @@ input[type="checkbox"]:checked + label > span {
   color: #4d5ae5;
   text-decoration: underline;
   line-height: 1.33;
-}
-
-@media (max-width: 767px) {
-  .modal-link {
-    padding-left: 24px;
-  }
 }
 
 .modal-button {
@@ -828,7 +742,7 @@ input[type="checkbox"]:checked + label > span {
   top: 50%;
   left: 50%;
   width: 320px;
-  min-height: 640px;
+  min-height: 100%;
   background-color: #ffffff;
   transform: translate(-50%, -50%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -901,6 +815,66 @@ input[type="checkbox"]:checked + label > span {
   cursor: pointer;
 }
 
+@media (max-width: 767px) {
+  .page-nav {
+    padding: 16px 0;
+  }
+  .nav-list {
+    visibility: hidden;
+    position: absolute;
+  }
+  .contact-block {
+    visibility: hidden;
+    position: absolute;
+  }
+  .main-title {
+    padding: 0 40px;
+  }
+  .title {
+    text-align: center;
+  }
+  .tagline {
+    text-align: center;
+  }
+  .tagline-text {
+    text-align: left;
+  }
+  .checkbox-mark {
+    position: relative;
+    top: 8px;
+  }
+  .modal-link {
+    padding-left: 24px;
+  }
+}
+
+@media (max-width: 1157px) {
+  .about-us-list {
+    flex-wrap: wrap;
+  }
+  .icon-container {
+    position: absolute;
+    visibility: hidden;
+  }
+  .list-team {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .tagline-container {
+    flex-wrap: wrap;
+    gap: 72px;
+  }
+  .subscribe-form {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .tagline-input {
+    opacity: 0.3;
+  }
+}
+
+/* ==================================== */
+
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
@@ -914,25 +888,6 @@ input[type="checkbox"]:checked + label > span {
     visibility: hidden;
     opacity: 0;
     position: absolute;
-  }
-
-  @media (min-width: 768px) and (max-width: 1157px) {
-    .page-nav {
-      margin-right: 122px;
-    }
-  }
-
-  @media (min-width: 767px) and (max-width: 1157px) {
-    .contact-menu {
-      flex-wrap: wrap;
-      gap: 12px;
-    }
-  }
-
-  .contact-information {
-    font-size: 12px;
-    line-height: 1.17;
-    letter-spacing: 0.04em;
   }
 
   .first-section {
@@ -978,21 +933,8 @@ input[type="checkbox"]:checked + label > span {
     column-gap: 24px;
   }
 
-  @media (min-width: 768px) and (max-width: 1157px) {
-    .list-portfolio {
-      row-gap: 72px;
-    }
-  }
-
   .item-portfolio {
     width: calc((100% - 24px) / 2);
-  }
-
-  @media (min-width: 768px) and (max-width: 1157px) {
-    .tagline-container {
-      gap: 72px 24px;
-      padding-left: 108px;
-    }
   }
 
   .tagline-text {
@@ -1017,6 +959,30 @@ input[type="checkbox"]:checked + label > span {
   }
 }
 
+@media (min-width: 768px) and (max-width: 1157px) {
+  .page-nav {
+    margin-right: 122px;
+  }
+  .contact-menu {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  .contact-information {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+  }
+  .list-portfolio {
+    row-gap: 72px;
+  }
+  .tagline-container {
+    gap: 72px 24px;
+    padding-left: 108px;
+  }
+}
+
+/* ======================================= */
+
 @media screen and (min-width: 1158px) {
   .container {
     width: 1158px;
@@ -1025,12 +991,6 @@ input[type="checkbox"]:checked + label > span {
 
   .logo {
     margin-right: 76px;
-  }
-
-  .contact-information {
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
   }
 
   .first-section {
