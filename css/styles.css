@@ -27,6 +27,7 @@ a {
 img {
   display: block;
   max-width: 100%;
+  height: auto;
 }
 
 .container {
@@ -738,10 +739,10 @@ input[type="checkbox"]:checked + label > span {
 }
 
 .menu {
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
-  width: 320px;
+  width: 100%;
   min-height: 100%;
   background-color: #ffffff;
   transform: translate(-50%, -50%);
@@ -749,13 +750,16 @@ input[type="checkbox"]:checked + label > span {
   padding: 72px 24px 40px 16px;
   visibility: hidden;
   opacity: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .menu-list {
   display: flex;
   flex-wrap: wrap;
   gap: 40px;
-  margin-bottom: 168px;
+  flex-direction: column;
 }
 
 .menu-link {
@@ -784,6 +788,7 @@ input[type="checkbox"]:checked + label > span {
   flex-wrap: wrap;
   gap: 40px;
   margin-bottom: 48px;
+  flex-direction: column;
 }
 
 .menu-contact-information {
@@ -815,7 +820,7 @@ input[type="checkbox"]:checked + label > span {
   cursor: pointer;
 }
 
-@media (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .page-nav {
     padding: 16px 0;
   }
@@ -833,6 +838,9 @@ input[type="checkbox"]:checked + label > span {
   .title {
     text-align: center;
   }
+  .image-portfolio {
+    display: none;
+  }
   .tagline {
     text-align: center;
   }
@@ -848,7 +856,7 @@ input[type="checkbox"]:checked + label > span {
   }
 }
 
-@media (max-width: 1157px) {
+@media screen and (max-width: 1157px) {
   .about-us-list {
     flex-wrap: wrap;
   }
@@ -920,6 +928,7 @@ input[type="checkbox"]:checked + label > span {
   .service {
     margin-top: 36px;
   }
+
   .about-us-list {
     gap: 72px 24px;
   }
@@ -930,6 +939,10 @@ input[type="checkbox"]:checked + label > span {
 
   .list-team {
     gap: 24px;
+  }
+
+  .image-portfolio-mobile {
+    display: none;
   }
 
   .list-portfolio {
@@ -960,9 +973,13 @@ input[type="checkbox"]:checked + label > span {
     width: 408px;
     padding: 72px 24px 24px 24px;
   }
+
+  .menu {
+    display: none;
+  }
 }
 
-@media (min-width: 768px) and (max-width: 1157px) {
+@media screen and (min-width: 768px) and (max-width: 1157px) {
   .page-nav {
     margin-right: 122px;
   }
