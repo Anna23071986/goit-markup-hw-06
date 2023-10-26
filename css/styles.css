@@ -62,6 +62,13 @@ header .container {
   color: #2e2f42;
 }
 
+.solid-menu-btn {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  height: 24px;
+}
+
 .page-nav {
   display: flex;
   align-items: center;
@@ -753,6 +760,7 @@ input[type="checkbox"]:checked + label > span {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  z-index: 100;
 }
 
 .menu-list {
@@ -775,7 +783,8 @@ input[type="checkbox"]:checked + label > span {
 }
 
 .menu-link:hover,
-.menu-link:focus {
+.menu-link:focus,
+.menu-link-first {
   color: #404bbf;
 }
 
@@ -804,6 +813,10 @@ input[type="checkbox"]:checked + label > span {
 
 .menu-contact-information:hover,
 .menu-contact-information:focus {
+  color: #4d5ae5;
+}
+
+.first-contact {
   color: #4d5ae5;
 }
 
@@ -837,9 +850,6 @@ input[type="checkbox"]:checked + label > span {
   }
   .title {
     text-align: center;
-  }
-  .image-portfolio {
-    display: none;
   }
   .tagline {
     text-align: center;
@@ -939,10 +949,6 @@ input[type="checkbox"]:checked + label > span {
 
   .list-team {
     gap: 24px;
-  }
-
-  .image-portfolio-mobile {
-    display: none;
   }
 
   .list-portfolio {
